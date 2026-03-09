@@ -1,11 +1,6 @@
-.page {
-  min-width: 1100px;
-  max-width: 1600px;
-  margin: 0 auto;
-  font-family: "Inter", "Arial", sans-serif;
-  font-size: 16px;
-  line-height: 20px;
-}
+@import url(../blocks/page.css);
+@import url(../blocks/header.css);
+@import url(../blocks/recipes.css);
 
 .header {
   display: flex;
@@ -14,8 +9,9 @@
   padding: 30px 80px 40px;
   position: relative;
   z-index: 0;
-  background: #fff url("../images/background_header.svg") no-repeat center/cover;
+  background: url("../images/background_header.svg") no-repeat center/cover;
   box-sizing: border-box;
+  background-size: cover;
 }
 
 .header__title {
@@ -94,14 +90,101 @@
   color: #000;
   text-decoration: none;
 }
+.recipes {
+  background-color: #0a2750;
+  background-image: url("../images/background_recipes.svg");
+  background-repeat: no-repeat;
+background-size: cover;
+background-position: center;
+padding: 100px 80px 215px;
+color: #fff
+}
+
+.recipes__title {
+  margin: 0 0 24px;
+}
+
+.recipes__subtitle {
+  margin: 0 0 80px;
+}
+
+.recipes__videos {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.recipes__iframe {
+  margin-bottom: 24px;
+  width: 480px;
+  height: 273px;
+}
+
+.recipes__video-caption {
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.reservation {
+  padding: 100px 0 215px;
+  font-family: Inter, Arial, sams-serif;
+}
 
 /* Write your styles here */
+
+.reservation__title {
+  text-align: center;
+  margin: 0 0 80px;
+}
+
+.reservation__form {
+  margin: 0 auto;
+}
+
+.form {
+  max-width: 385px;
+}
+
+.form__fieldset {
+
+}
 
 .footer {
   padding: 60px 80px;
   background: linear-gradient(180deg, #0a2850 0%, #071931 100%);
   color: #fff;
   box-sizing: border-box;
+}
+
+.form__input{
+  display: block;
+  margin-top: 8px;
+  width: 100%;
+  padding: 15px;
+  border: 1px solid #838383;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-family: "Inter", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.form__button {
+  width: 100%;
+  padding: 20px 0;
+  margin-bottom: 32px;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 500;
+  background-color: #1878DC;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
 }
 
 .footer__content {

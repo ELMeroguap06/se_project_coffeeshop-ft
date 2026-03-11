@@ -1,0 +1,49 @@
+.cards{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 100px 40px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.card__title {
+  margin: 0 0 32px;
+}
+
+.card__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  gap: 40px;
+  display: flex;
+flex-direction: column;  
+text-decoration: underline;
+flex-wrap: wrap;
+justify-content: center;
+}
+
+.card-container {
+  display: flex;
+  gap: 20px;
+}
+
+.card__list-item {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  width: 100%;
+  
+
+}
+
+.card__list-divider {
+border-bottom: #838383 solid 1px;
+flex-grow: 1;
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    text-decoration: underline;
+    margin: 0 10px;
+}

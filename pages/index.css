@@ -1,4 +1,9 @@
 @import url(../blocks/page.css);
+@import url(../blocks/recipes.css);
+@import url(../blocks/nav.css);
+@import url(../blocks/about.css);
+@import url(../blocks/cards.css);
+@import url(../blocks/menu.css);
 
 .header {
   display: flex;
@@ -88,27 +93,21 @@
   color: #000;
   text-decoration: none;
 }
-.recipes {
-  background-color: #0a2750;
-  background-image: url("../images/background_recipes.svg");
-  background-repeat: no-repeat;
-background-size: cover;
-background-position: center;
-padding: 100px 80px 215px;
-color: #fff
-}
+
 
 .recipes__title {
-  margin: 0 0 24px;
+  margin: 0 0 12px;
+max-width: 580px;
 }
 
 .recipes__subtitle {
-  margin: 0 0 80px;
+margin: 0 0 80px;
+max-width: 430px;
 }
 
 .recipes__videos {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   gap: 40px;
   list-style-type: none;
   margin: 0;
@@ -125,16 +124,24 @@ color: #fff
   margin: 0;
   display: flex;
   justify-content: space-between;
+
 }
 
 .reservation {
   padding: 100px 0 215px;
+  background: no-repeat;
+  background-position: cover;
+  background-color:#D9E7FF ;
   font-family: Inter, Arial, sams-serif;
   background-image: url("../images/background_reservation.svg");
 }
 
-.content{
-   background-color: #0a2850;
+.reservation__text {
+
+}
+
+.content {
+  background-color: #0a2850;
   background-image: url(../images/background_recipes.svg);
   background-repeat: no-repeat;
   background-position: center;
@@ -158,7 +165,7 @@ color: #fff
   padding: 0;
   list-style-type: none;
   display: flex;
-  justify-content: center;
+  flex-direction: row;
   gap: 40px;
 }
 
@@ -172,7 +179,9 @@ color: #fff
   margin: 24px 0 0;
   display: flex;
   justify-content: space-between;
+  width: 480px;
 }
+
 
 .footer {
   padding: 60px 80px;
@@ -181,11 +190,16 @@ color: #fff
   box-sizing: border-box;
 }
 
+.form__label {
+
+}
+
+
 .form__input{
   display: block;
   margin-top: 8px;
   width: 100%;
-  padding: 15px;
+  padding: 20px 0;
   border: 1px solid #838383;
   border-radius: 4px;
   box-sizing: border-box;

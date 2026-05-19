@@ -9,6 +9,14 @@
   overflow: hidden;
 }
 
+.about__inner {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
 .about__title {
   max-width: 290px;
   margin: 0;

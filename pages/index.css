@@ -1,9 +1,12 @@
+@import url(../vendor/normalize.css);
 @import url(../blocks/page.css);
+@import url(../blocks/header.css);
 @import url(../blocks/recipes.css);
 @import url(../blocks/nav.css);
 @import url(../blocks/about.css);
 @import url(../blocks/cards.css);
 @import url(../blocks/menu.css);
+
 
 .header {
   display: flex;
@@ -137,8 +140,35 @@ max-width: 430px;
   background-image: url("../images/background_reservation.svg");
 }
 
-.reservation__text {
+.reservation__form {
+margin: 0 auto;
+}
 
+.reservation__title {
+  margin: 0 auto;
+  max-width: 385px;
+  text-align: center;
+  margin-bottom: 80px;
+  font-family: Inter;
+font-style: normal;
+font-weight: 500;
+font-size: 44px;
+line-height: 52px;
+}
+
+.form{
+  max-width: 385px;
+}
+
+.form__fieldset {
+  margin: 0;
+  padding: 0;
+  border: none;
+  font-family: Inter;
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 20px;
 }
 
 .content {
@@ -154,6 +184,7 @@ max-width: 430px;
 .recipes__title {
   margin: 0 0 24px;
   max-width: 580px;
+  text-align: center;
 }
 
 .recipes__subtitle {
@@ -191,8 +222,10 @@ max-width: 430px;
   box-sizing: border-box;
 }
 
-.form__label {
-
+.form__label_type_checkbox {
+ display: flex;
+ justify-content: center;
+ gap: 20px;
 }
 
 
@@ -207,6 +240,13 @@ max-width: 430px;
   font-family: "Inter", Arial, sans-serif;
   font-size: 16px;
   line-height: 20px;
+  margin-bottom: 32px;
+  font-family: Inter;
+font-style: normal;
+font-weight: normal;
+font-size: 20px;
+line-height: 30px;
+padding: 15px 20px;
 }
 
 .form__button {
@@ -221,6 +261,17 @@ max-width: 430px;
   border: none;
   border-radius: 4px;
   cursor: pointer;
+  margin-top: 32px;
+  font-family: Inter;
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 20px;
+}
+
+.form__button:hover {
+background-color: #3f96f3;
+transition: background-color 0.5s;
 }
 
 .footer__content {
@@ -267,6 +318,11 @@ max-width: 430px;
   font-size: 16px;
   line-height: 20px;
   text-decoration: none;
+}
+
+.footer.footer__social-link:hover {
+  opacity: 70%;
+  transition: all 0.5s;
 }
 
 .footer__copyright {

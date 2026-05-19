@@ -8,7 +8,7 @@
 <meta name="author" content="Software Engineer">
 <meta name="keywords" content="HTML, CSS">
 
-<link rel="stylesheet" href="vendor/normalize.css">
+
 <link rel="stylesheet" href="pages/index.css">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -34,7 +34,7 @@ rel="stylesheet">
 <li><a href="#recipes" class="nav__link">Recipes</a></li>
 <li><a href="#reservation" class="nav__link">Book a table</a></li>
 <li><a href="#menu" class="nav__link">Menu</a></li>
-<li><a href="#contacts" class="nav__link">Contacts</a></li>
+<li><a href="#about" class="nav__link">Contacts</a></li>
 </ul>
 </nav>
 
@@ -69,7 +69,7 @@ class="header__image">
 
 <main class="content">
 
-<section class="recipes">
+<section class="recipes" id="recipes">
   <h2 class="recipes__title">Recipes</h2>
 <p class="recipes__subtitle">Check out some recipes
   we've collected for your home-brewing
@@ -117,7 +117,7 @@ autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture;
 
 <h2 class="reservation__title">Book a table</h2>
 
-<form class="formreservation__form">
+<form class="form reservation__form">
 
 <fieldset class="form__fieldset">
 
@@ -148,6 +148,7 @@ Book a table
 </button>
 
 <label for="terms-of-use" class="form__label form__label_type_checkbox">
+
 <input id="terms-of-use" type="checkbox" class="form__checkbox">
 I agree with the terms of use
 </label>
@@ -156,131 +157,52 @@ I agree with the terms of use
 
 </section>
 
-<section class="menu">
+<section id="menu" class="menu">
   <h2 class="menu__title">Menu</h2>
-
   <p class="menu__subtitle">
     We brew coffee from locally roasted, Fairtrade certified beans and use biodegradable cups.
     All teas from our collection are $2/cup.
   </p>
 
-  <ul class="cards">
+  <ul class="menu_cards">
 
     <li class="card">
       <h3 class="card__title">Filter</h3>
-
       <ul class="card__list">
-
-        <li class="card__list-item">
-          Regular (12 oz)
-          <span class="card__list-divider"></span>
-          $1
-        </li>
-
-        <li class="card__list-item">
-          Large (16 oz)
-          <span class="card__list-divider"></span>
-          $1.25
-        </li>
-
-        <li class="card__list-item">
-          XL (20 oz)
-          <span class="card__list-divider"></span>
-          $1.5
-        </li>
-
-        <li class="card__list-item">
-          Party-size (24 oz, decaf)
-          <span class="card__list-divider"></span>
-          $1.75
-        </li>
-
-        <li class="card__list-item">
-          Iced coffee (16 oz)
-          <span class="card__list-divider"></span>
-          $1.25
-        </li>
-
+        <li class="card__list-item">Regular (12 oz)<span class="card__list-divider"></span>$1</li>
+        <li class="card__list-item">Large (16 oz)<span class="card__list-divider"></span>$1.25</li>
+        <li class="card__list-item">XL (20 oz)<span class="card__list-divider"></span>$1.5</li>
+        <li class="card__list-item">Party-size (24 oz, decaf)<span class="card__list-divider"></span>$1.75</li>
+        <li class="card__list-item">Iced Coffee (16 oz)<span class="card__list-divider"></span>$1.25</li>
       </ul>
     </li>
 
     <li class="card">
       <h3 class="card__title">Espresso</h3>
-
       <ul class="card__list">
-
-        <li class="card__list-item">
-          Macchiato
-          <span class="card__list-divider"></span>
-          $2.25
-        </li>
-
-        <li class="card__list-item">
-          Cortado
-          <span class="card__list-divider"></span>
-          $2.5
-        </li>
-
-        <li class="card__list-item">
-          Mocha
-          <span class="card__list-divider"></span>
-          $3
-          </li>
-
-          <li class="card__list-item">
-            Sunrise in the Bay Area (decaf)
-            <span class="card__list-divider"></span>
-            $10
-          </li>
-
+        <li class="card__list-item">Macchiato<span class="card__list-divider"></span>$2.25</li>
+        <li class="card__list-item">Cortado<span class="card__list-divider"></span>$2.5</li>
+        <li class="card__list-item">Mocha<span class="card__list-divider"></span>$3</li>
+        <li class="card__list-item">Sunrise in the Bay Area (decaf)<span class="card__list-divider"></span>$10</li>
       </ul>
     </li>
 
-
-
-<li class="card">
-  <h3 class="card__title">Baked Goods</h3>
-  <ul class="card__list">
-    <li class="card__list-item">
-      Almond croissant
-      <span class="card__list-divider"></span>
-      $2
-      </li>
-      <li class="card__list-item">
-        Banana bread
-        <span class="card__list-divider"></span>
-        $1.75
-        </li>
-        <li class="card__list-item">
-          keylime pie
-          <span class="card__list-divider"></span>
-          $3
-          </li>
-          <li class="card__list-item">
-            Blue velvet cake
-            <span class="card__list-divider"></span>
-            $3.75
-          </li>
-          <li class="card__list-item">
-            Web cookie
-            <span class="card__list-divider"></span>
-            $2
-          </li>
-
-          <li class="card__list-item">
-            Fresh Bug'uette
-            <span class="card__list-divider"></span>
-            $0.25
-          </li>
-
-        </ul>
-      </li>
-
+    <li class="card">
+      <h3 class="card__title">Baked Goods</h3>
+      <ul class="card__list">
+        <li class="card__list-item">Almond croissant<span class="card__list-divider"></span>$2</li>
+        <li class="card__list-item">Banana bread<span class="card__list-divider"></span>$1.75</li>
+        <li class="card__list-item">Key lime pie<span class="card__list-divider"></span>$3</li>
+        <li class="card__list-item">Blue velvet cake<span class="card__list-divider"></span>$3.75</li>
+        <li class="card__list-item">Web cookie<span class="card__list-divider"></span>$2</li>
+        <li class="card__list-item">Fresh Bug'uette<span class="card__list-divider"></span>$0.25</li>
+      </ul>
+    </li>
 
   </ul>
 </section>
 
-<section class="about" style=" padding: 100px 80px 173px; display: flex; justify-content: space-between; background-color: #0a2750; color: #fff; position: relative; z-index: 0; overflow: hidden; ">
+<section class="about" id="about">
 
 
     <div style="position: relative; z-index: 1; display: flex; width: 100%; justify-content: space-between;">
@@ -288,12 +210,14 @@ I agree with the terms of use
         <div class="about__content" style="flex: 1;">
             <p class="about__paragraph"> Our coffee shop is located in the Triple Peaks Library. It features 6 tables and free WiFi. </p>
             <p class="about__paragraph"> Our main mission is keeping guests cozy and energized. </p>
-            <p class="about__paragraph"> Besides that, we try to reduce our environmental impact so we don t sell single use cups. But you can buy one of our reusable cups ! </p>
+            <p class="about__paragraph"> Besides that, we try to reduce our environmental impact so we don t sell single use cups. But you can buy one of our reusable cups! </p>
         </div>
     </div>
 
 
+
     <div class="about__circle" style=" background-color: #1878dc; border-radius: 50%; width: 426px; height: 426px; position: absolute; top: -152px; left: -129px; z-index: 0; "> </div>
+<div class="about__circle about__circle_animation_blurred"> </div>
 </section>
 
 

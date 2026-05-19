@@ -1,16 +1,16 @@
-# Triple Peaks Coffee Shop
+# Coffee Shop
 
-This is the second project of the fulltime Software Engineering program at TripleTen. It was created using HTML and CSS, based on the design brief.
+A coffee shop landing page built with HTML and CSS.
 
-## Project features
+## Description
+This project is a landing page for a specialty coffee shop located in the Triple Peaks Library. It features a recipes section with YouTube embeds, a table reservation form, a menu, and an about section.
 
-- Semantic HTML5
-- Flexbox
-- Positioning
-- Flat BEM file structure
-- A custom form
-- CSS animation and transform
+## Technologies Used
+- HTML5
+- CSS3 (BEM methodology)
+- Google Fonts (Inter, Noto Serif)
 
-## Plan on improving the project
-
-Add your ideas here :)
+## Future Improvements
+- Add mobile responsiveness
+- Add form validation with JavaScript
+- Add an online ordering feature

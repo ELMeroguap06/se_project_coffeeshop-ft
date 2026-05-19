@@ -7,7 +7,7 @@
     background-size: cover;
     background-color: #fff;
     background-position: center;
-    padding: 100px 0;   
+    padding: 100px 0;
 }
 
 .menu__title {
@@ -26,16 +26,24 @@
   max-width: 780px;
   text-align: center;
   margin: 0 auto 100px;
+  font-family: "Noto Serif";
+font-style: normal;
+font-weight: normal;
+font-size: 20px;
+line-height: 30px;
   }
 
-.menu__cards { 
-  display: flex;
-    margin: 0;
-    padding: 0;
-    list-style-type: none;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 100px;
-
+.menu__cards {
+display: grid;
+grid-template-columns: repeat(2, auto);
+justify-content: center;
+gap: 60px 40px;
+list-style: none;
+padding: 0;
+margin: 0;
 }
-  
+
+.card:last-child {
+  grid-column: 1 / -1;
+  justify-self: center;
+}

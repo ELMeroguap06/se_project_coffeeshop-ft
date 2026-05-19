@@ -23,6 +23,7 @@
 .card__title {
   margin: 0 0 20px;
   font-family: "Inter", Arial, sans-serif;
+  font-family: "Noto Serif", "Times New Roman", serif;
   font-weight: bold;
   font-size: 20px;
   line-height: 30px;
@@ -36,6 +37,7 @@
   flex-direction: column;
   gap: 14px;
   font-family: "Noto Serif", serif;
+  font-family: "Noto Serif", "Times New Roman", serif;
   font-size: 16px;
   line-height: 20px;
 }
